@@ -10,7 +10,7 @@ import com.example.crudspringbootdynamodb.entity.ProductCatalog;
 @EnableScan
 public interface ProductCatalogDAO extends CrudRepository<ProductCatalog, String>{
 	
-	List<ProductCatalog> findById(String productId);
+	ProductCatalog findById(String id);
 	
 	List<ProductCatalog> findAll();
 	
